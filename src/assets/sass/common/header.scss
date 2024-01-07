@@ -1,2 +1,36 @@
 // & == .header
-.header {}
+.header {
+    color: var(--color-white);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 46rem 175rem 145rem 120rem;
+
+        &__nav {
+            &-row {
+                display: flex;
+                flex-direction: row;
+                gap: 32rem;
+            }
+
+
+            gap: 16rem;
+
+            &-link {
+                text-decoration: none;
+                text-transform: uppercase;
+                font: var(--bottom-header-font);
+                letter-spacing: 0.24px;
+
+                color: inherit;
+                letter-spacing: 3.9rem;
+            }
+        }
+    }
+
+
+
+
+}

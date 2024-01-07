@@ -2,20 +2,20 @@ html {
     font-size: 1px;
 }
 
-// body {
-//     font-family: $sub-fonts;
-//     font-weight: 400;
-// }
+body {
+    font: var(--header-font);
+    background-color: var(--color-black-02);
+    color: var(--color-white);
+}
 
 .container {
-    max-width: 1678rem;
+    max-width: 1920rem;
     margin: 0 auto;
 }
 
-// .logo {
-//     max-width: 134px;
-//     height: 11px;
-// }
+.logo {
+    max-width: 328rem;
+}
 
 // .wrapper {
 //     min-height: 100vh;
