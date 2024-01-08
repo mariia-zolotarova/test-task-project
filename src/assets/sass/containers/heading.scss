@@ -1,15 +1,35 @@
 .headind__container {
     display: flex;
     flex-direction: row;
-    margin: 144rem 0 270rem 120rem;
+    padding: 0 0 270rem 120rem;
+    background-image: url(../../img/heading/heading-background1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 90%;
 
     &__description {
+        max-width: 887rem;
+
+
         &__title {
             font: var(--heading-title-font);
+            text-transform: uppercase;
+            margin-bottom: 30rem;
         }
 
         &__sub-title {
             font: var(--heading-sub-title-font);
+            margin-bottom: 60rem;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 25rem;
+
+            &--item {
+                width: 342rem;
+            }
         }
     }
 
