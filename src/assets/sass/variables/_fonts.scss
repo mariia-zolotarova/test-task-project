@@ -13,8 +13,15 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
 
     --top-header-font: 600 14rem/normal var(--roboto-fonts);
     --bottom-header-font: 400 12rem/normal var(--inter-fonts);
+    --heading-title-font: 600 54rem/normal var(--montserrat-fonts);
+    --heading-sub-title-font: 300 32rem/normal var(--inter-fonts);
+    --buttons-font: 400 20rem/normal var(--inter-fonts);
 }
 
 .bottom-header-font {
     font: var(--bottom-header-font);
+}
+
+.top-header-font {
+    font: var(--top-header-font);
 }

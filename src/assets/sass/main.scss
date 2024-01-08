@@ -1,7 +1,6 @@
 // Variables
 @import './variables/media';
 @import './variables/color';
-;
 @import './variables/fonts';
 
 // Global Style
@@ -21,3 +20,7 @@
 // Pages Style
 @import './pages/home.scss';
 // Pages Style End
+
+// Containers Style
+@import './containers/heading.scss';
+// Containers Style End

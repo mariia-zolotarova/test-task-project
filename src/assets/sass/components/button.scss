@@ -1,14 +1,27 @@
-.button {
+.button-green {
     border: none;
+    border-radius: 4rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0.1em;
-    width: 160px;
-    height: 45px;
+    padding: 19rem 39rem;
+    font: var(--buttons-font);
+    color: var(--color-black-19);
+    background-color: var(--color-green);
+    transition: background-color 0.5s;
+}
+
+.button-black {
+    border: 2px solid var(--color-green);
+    border-radius: 4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--buttons-font);
+    color: var(--color-green);
+    background-color: transparent;
+    padding: 19rem 39rem;
     transition: background-color 0.5s;
 }

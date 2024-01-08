@@ -1,0 +1,19 @@
+.headind__container {
+    display: flex;
+    flex-direction: row;
+    margin: 144rem 0 270rem 120rem;
+
+    &__description {
+        &__title {
+            font: var(--heading-title-font);
+        }
+
+        &__sub-title {
+            font: var(--heading-sub-title-font);
+        }
+    }
+
+    &__img {
+        max-width: 805rem;
+    }
+}

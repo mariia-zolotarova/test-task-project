@@ -2,14 +2,47 @@
 .header {
     color: var(--color-white);
 
-    &__container {
+    &__top__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20rem 119rem 22rem 120rem;
+        border-bottom: 1rem solid var(--color-sand);
+
+        &__nav {
+            gap: 16rem;
+
+            &--row {
+                display: flex;
+                flex-direction: row;
+                gap: 32rem;
+            }
+
+            &--item {
+                font: var(--top-header-font);
+                letter-spacing: 0.28px;
+            }
+
+            &--green {
+                color: var(--color-green);
+            }
+        }
+
+        &__icons {
+            display: flex;
+            flex-direction: row;
+            gap: 10rem;
+        }
+    }
+
+    &__bottom__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 46rem 175rem 145rem 120rem;
 
         &__nav {
-            &-row {
+            &--row {
                 display: flex;
                 flex-direction: row;
                 gap: 32rem;
@@ -18,12 +51,11 @@
 
             gap: 16rem;
 
-            &-link {
+            &--link {
                 text-decoration: none;
-                text-transform: uppercase;
                 font: var(--bottom-header-font);
                 letter-spacing: 0.24px;
-
+                line-height: 150%;
                 color: inherit;
                 letter-spacing: 3.9rem;
             }
