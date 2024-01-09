@@ -10,15 +10,20 @@
         gap: 26rem;
         margin-bottom: 60rem;
 
+
         &--img {
-            max-width: 1110rem;
-            border-radius: 21rem;
+            width: 50%;
+
+            &--item {
+                border-radius: 21rem;
+            }
         }
 
         &__info {
             display: flex;
             flex-direction: column;
             gap: 20rem;
+            width: 50%;
 
             &--title {
                 font: var(--innovations-title-font);
