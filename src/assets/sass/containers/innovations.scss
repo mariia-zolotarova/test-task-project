@@ -1,4 +1,5 @@
 .innovations__container {
+    background-color: var(--color-black-19);
     display: flex;
     flex-direction: column;
     padding: 0 120rem 159rem 120rem;
@@ -41,13 +42,16 @@
     &__frame {
         display: flex;
         flex-direction: row;
+        margin: 0 auto;
 
         &__item {
             display: flex;
             flex-direction: column;
             max-width: 549rem;
             padding: 50rem 40rem 50rem 40rem;
-            gap: 20rem;
+            // gap: 20rem;
+            margin-right: 20rem;
+            background-color: var(--color-black-1E);
 
             &--img {
                 max-width: 187rem;
@@ -65,6 +69,10 @@
                 line-height: 110%;
                 letter-spacing: 0.44px;
             }
+        }
+
+        &__item:last-child {
+            margin-right: 0rem;
         }
     }
 }
