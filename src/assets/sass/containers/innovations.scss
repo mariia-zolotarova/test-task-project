@@ -1,0 +1,70 @@
+.innovations__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 120rem 159rem 120rem;
+
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        gap: 26rem;
+        margin-bottom: 60rem;
+
+        &--img {
+            max-width: 1110rem;
+            border-radius: 21rem;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+
+            &--title {
+                font: var(--innovations-title-font);
+                line-height: 110%;
+                letter-spacing: 0.96px;
+                text-transform: uppercase;
+
+                &--thin {
+                    font: var(--innovations-sub-title-font);
+                }
+            }
+
+            &--description {
+                font: var(--innovations-description-font);
+                line-height: 110%;
+                letter-spacing: 0.44px;
+            }
+        }
+    }
+
+    &__frame {
+        display: flex;
+        flex-direction: row;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            max-width: 549rem;
+            padding: 50rem 40rem 50rem 40rem;
+            gap: 20rem;
+
+            &--img {
+                max-width: 187rem;
+                max-height: 80rem;
+            }
+
+            &--title {
+                font: var(--innovations-frame-title-font);
+                line-height: 110%;
+                letter-spacing: 0.48px;
+            }
+
+            &--description {
+                font: var(--innovations-frame-description-font);
+                line-height: 110%;
+                letter-spacing: 0.44px;
+            }
+        }
+    }
+}

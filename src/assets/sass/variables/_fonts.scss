@@ -11,11 +11,27 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
     --montserrat-fonts: 'Montserrat', sans-serif;
     --roboto-fonts: 'Roboto Flex', sans-serif;
 
+    //Global Fonts
+    --buttons-font: 400 20rem/normal var(--inter-fonts);
+
+    // Header Fonts
     --top-header-font: 600 14rem/normal var(--roboto-fonts);
     --bottom-header-font: 400 12rem/normal var(--inter-fonts);
+
+    //Heading Fonts
     --heading-title-font: 600 54rem/normal var(--montserrat-fonts);
     --heading-sub-title-font: 300 32rem/normal var(--inter-fonts);
-    --buttons-font: 400 20rem/normal var(--inter-fonts);
+
+    //Innovations Fonts
+    --innovations-title-font: 600 48rem/normal var(--montserrat-fonts);
+    --innovations-sub-title-font: 300 48rem/normal var(--montserrat-fonts);
+    --innovations-description-font: 200 22rem/normal var(--roboto-fonts);
+    --innovations-frame-title-font: 600 24rem/normal var(--roboto-fonts);
+    --innovations-frame-description-font: 200 22rem/normal var(--roboto-fonts);
+
+
+    //Footer Fonts
+    --bottom-footer-font: 300 17rem/normal var(--inter-fonts);
 }
 
 .bottom-header-font {
