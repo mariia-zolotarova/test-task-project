@@ -41,26 +41,56 @@
             </div>
 
             <div class="container header-bottom__container">
-                <img class="logo" src="@@webRoot/img/header/logo.png" alt="logo">
+                <img class="logo header-bottom__logo" src="@@webRoot/img/header/logo.png" alt="logo">
+
+                <div class="header-bottom__hamburger" onclick="toggleMenu()">
+                    <span class="header-bottom__span"></span>
+                    <span class="header-bottom__span"></span>
+                    <span class="header-bottom__span"></span>
+                </div>
+
+                <nav class="header-bottom__mobile" id="mobile-menu">
+                    <ul class="header-bottom__mobile-row ">
+                        <li class="header-bottom__mobile-item">
+                            <a class="header-bottom__mobile-link " href="/">Головна</a>
+                        </li>
+                        <li class="header-bottom__mobile-item">
+                            <a class="header-bottom__mobile-link" href="./pages/about.html">Магазин</a>
+                        </li>
+                        <li class="header-bottom__mobile-item">
+                            <a class="header-bottom__mobile-link" href="./pages/works.html">Дрони</a>
+                        </li>
+                        <li class="header-bottom__mobile-item">
+                            <a class="header-bottom__mobile-link" href="./pages/blog.html">Послуги</a>
+                        </li>
+                        <li class="header-bottom__mobile-item">
+                            <a class="header-bottom__mobile-link" href="./pages/contact.html">Про нас</a>
+                        </li>
+                        <li class="header-bottom__mobile-item">
+                            <a class="header-bottom__mobile-link" href="./pages/contact.html">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+
                 <nav class="header-bottom__nav">
                     <ul class="header-bottom__row ">
-                        <li class="header-bottom__row-item">
-                            <a class="header-bottom__row-link " href="/">Головна</a>
+                        <li class="header-bottom__nav-item">
+                            <a class="header-bottom__nav-link " href="/">Головна</a>
                         </li>
-                        <li class="header-bottom__row-item">
-                            <a class="header-bottom__row-link" href="./pages/about.html">Магазин</a>
+                        <li class="header-bottom__nav-item">
+                            <a class="header-bottom__nav-link" href="./pages/about.html">Магазин</a>
                         </li>
-                        <li class="header-bottom__row-item">
-                            <a class="header-bottom__row-link" href="./pages/works.html">Дрони</a>
+                        <li class="header-bottom__nav-item">
+                            <a class="header-bottom__nav-link" href="./pages/works.html">Дрони</a>
                         </li>
-                        <li class="header-bottom__row-item">
-                            <a class="header-bottom__row-link" href="./pages/blog.html">Послуги</a>
+                        <li class="header-bottom__nav-item">
+                            <a class="header-bottom__nav-link" href="./pages/blog.html">Послуги</a>
                         </li>
-                        <li class="header-bottom__row-item">
-                            <a class="header-bottom__row-link" href="./pages/contact.html">Про нас</a>
+                        <li class="header-bottom__nav-item">
+                            <a class="header-bottom__nav-link" href="./pages/contact.html">Про нас</a>
                         </li>
-                        <li class="header-bottom__row-item">
-                            <a class="header-bottom__row-link" href="./pages/contact.html">Контакти</a>
+                        <li class="header-bottom__nav-item">
+                            <a class="header-bottom__nav-link" href="./pages/contact.html">Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -267,6 +297,20 @@
     <!--Обовязково додавати потрібно для JS -->
     <script> var exports = {}; </script>
     <script src="@@webRoot/js/index.js"></script>
+    <script>
+        function toggleMenu() {
+            var hamburger = document.querySelector('.header-bottom__hamburger');
+            hamburger.classList.toggle('active');
+
+            var mobileMenu = document.getElementById("mobile-menu");
+
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            } else {
+                mobileMenu.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
