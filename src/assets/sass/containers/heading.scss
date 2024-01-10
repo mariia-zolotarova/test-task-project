@@ -1,35 +1,36 @@
-.headind__container {
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 270rem 120rem;
-    background-image: linear-gradient(to left, transparent, black 85%), url(../../img/heading/heading-background.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 90%;
+.headind {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 270rem 120rem;
+        background-image: linear-gradient(to left, transparent, black 85%), url(../../img/heading/heading-background.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 90%;
+    }
 
     &__description {
         width: 50%;
+    }
 
+    &__title {
+        font: var(--heading-title-font);
+        text-transform: uppercase;
+        margin-bottom: 30rem;
+    }
 
-        &__title {
-            font: var(--heading-title-font);
-            text-transform: uppercase;
-            margin-bottom: 30rem;
-        }
+    &__sub-title {
+        font: var(--heading-sub-title-font);
+        margin-bottom: 60rem;
+    }
 
-        &__sub-title {
-            font: var(--heading-sub-title-font);
-            margin-bottom: 60rem;
-        }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 25rem;
 
-        &__buttons {
-            display: flex;
-            flex-direction: row;
-            gap: 25rem;
-
-            &--item {
-                width: 342rem;
-            }
+        &-item {
+            width: 342rem;
         }
     }
 

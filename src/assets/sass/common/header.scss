@@ -1,68 +1,56 @@
-// & == .header
-.header {
+.header-top {
     color: var(--color-white);
 
-    &__top__container {
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20rem 119rem 22rem 120rem;
         border-bottom: 1rem solid var(--color-sand);
+    }
 
-        &__nav {
-            gap: 16rem;
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 32rem;
 
-            &--row {
-                display: flex;
-                flex-direction: row;
-                gap: 32rem;
-            }
-
-            &--item {
-                font: var(--top-header-font);
-                letter-spacing: 0.28px;
-            }
-
-            &--green {
-                color: var(--color-green);
-            }
+        &-item {
+            font: var(--top-header-font);
+            letter-spacing: 0.28px;
         }
 
-        &__icons {
-            display: flex;
-            flex-direction: row;
-            gap: 10rem;
+        &-green {
+            color: var(--color-green);
         }
     }
 
-    &__bottom__container {
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+}
+
+.header-bottom {
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 46rem 175rem 145rem 120rem;
-
-        &__nav {
-            &--row {
-                display: flex;
-                flex-direction: row;
-                gap: 32rem;
-            }
-
-
-            gap: 16rem;
-
-            &--link {
-                text-decoration: none;
-                font: var(--bottom-header-font);
-                letter-spacing: 0.24px;
-                line-height: 150%;
-                color: inherit;
-                letter-spacing: 3.9rem;
-            }
-        }
     }
 
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 32rem;
 
-
-
+        &-link {
+            text-decoration: none;
+            font: var(--bottom-header-font);
+            letter-spacing: 0.24px;
+            line-height: 150%;
+            color: inherit;
+            letter-spacing: 3.9rem;
+        }
+    }
 }

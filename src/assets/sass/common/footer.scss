@@ -1,77 +1,74 @@
-// & == .header
-.footer {
+.footer-top {
     color: var(--color-white);
 
-    &__top__container {
+    &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 62rem;
         border-bottom: 1rem solid var(--color-sand);
+    }
 
-        &__logo {
-            margin-bottom: 55rem;
-        }
+    &__logo {
+        margin-bottom: 55rem;
+    }
 
-        &__nav {
-            margin-bottom: 51rem;
+    &__nav {
+        margin-bottom: 51rem;
+    }
 
-            &--row {
-                display: flex;
-                flex-direction: row;
-                gap: 32rem;
-            }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 32rem;
 
-            gap: 16rem;
-
-            &--link {
-                text-decoration: none;
-                font: var(--bottom-header-font);
-                letter-spacing: 0.24px;
-                line-height: 150%;
-                color: inherit;
-                letter-spacing: 3.9rem;
-            }
-        }
-
-
-        &__contacts {
-            gap: 16rem;
-            margin-bottom: 41rem;
-
-            &--row {
-                display: flex;
-                flex-direction: row;
-                gap: 32rem;
-            }
-
-            &--item {
-                font: var(--top-header-font);
-                letter-spacing: 0.28px;
-            }
-
-            &--green {
-                color: var(--color-green);
-            }
-        }
-
-        &__icons {
-            display: flex;
-            flex-direction: row;
-            gap: 10rem;
-            margin-bottom: 51rem;
+        &-link {
+            text-decoration: none;
+            font: var(--bottom-header-font);
+            letter-spacing: 0.24px;
+            line-height: 150%;
+            color: inherit;
+            letter-spacing: 3.9rem;
         }
     }
 
-    &__bottom__container {
-        &__text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 32rem 0 62rem;
-            color: var(--color-light-grey-B3);
-            font: var(--bottom-footer-font);
-            line-height: 24rem;
+
+    &__contacts {
+        gap: 16rem;
+        margin-bottom: 41rem;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 32rem;
+
+        &-item {
+            font: var(--top-header-font);
+            letter-spacing: 0.28px;
         }
+
+        &-green {
+            color: var(--color-green);
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        margin-bottom: 51rem;
+    }
+}
+
+.footer-bottom {
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 32rem 0 62rem;
+        color: var(--color-light-grey-B3);
+        font: var(--bottom-footer-font);
+        line-height: 24rem;
     }
 }
