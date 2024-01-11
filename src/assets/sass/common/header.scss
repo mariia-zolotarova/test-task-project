@@ -38,53 +38,47 @@
 .header-bottom {
     position: relative;
 
-    @media (min-width: $tablet) and (max-width:$desctop) {
-        &__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 46rem 175rem 145rem 120rem;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 46rem 175rem 145rem 120rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin: 46rem 0 65rem 10%;
         }
 
-        &__row {
-            display: flex;
-            flex-direction: row;
-            gap: 32rem;
-        }
 
-        &__nav-link {
-            text-decoration: none;
-            font: var(--bottom-header-font);
-            letter-spacing: 0.24px;
-            line-height: 150%;
-            color: inherit;
-            letter-spacing: 3.9rem;
-        }
-
-        &__mobile {
-            display: none;
-        }
     }
 
-    @media (max-width: $tablet) {
-        &__logo {
-            width: 200rem;
-        }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: 32rem;
 
-        &__container {
-            display: flex;
-            flex-direction: column;
-
-            margin: 46rem 0 145rem 10%;
-
-        }
-
-        &__row {
+        @media (max-width: $tablet) {
             display: none;
         }
 
-        &__mobile {
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        font: var(--bottom-header-font);
+        letter-spacing: 0.24px;
+        line-height: 150%;
+        color: inherit;
+        letter-spacing: 3.9rem;
+    }
+
+    &__mobile {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: none;
+
             &-row {
                 display: flex;
                 flex-direction: column;
@@ -103,6 +97,16 @@
 
             height: 100vh;
             z-index: 1;
+        }
+    }
+
+
+    @media (max-width: $tablet) {
+        &__logo {
+            width: 200rem;
+            position: absolute;
+            left: 50rem;
+            top: 55rem;
         }
     }
 
@@ -137,7 +141,8 @@
         &__hamburger {
             display: block;
             position: absolute;
-            right: 0;
+            right: 50rem;
+            top: 48rem;
         }
     }
 }

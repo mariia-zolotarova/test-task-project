@@ -7,6 +7,10 @@
         align-items: center;
         margin-top: 62rem;
         border-bottom: 1rem solid var(--color-sand);
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
     &__logo {
@@ -59,6 +63,7 @@
         gap: 10rem;
         margin-bottom: 51rem;
     }
+
 }
 
 .footer-bottom {

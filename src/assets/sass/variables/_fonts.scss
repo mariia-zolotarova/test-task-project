@@ -20,7 +20,9 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
 
     //Heading Fonts
     --heading-title-font: 600 54rem/normal var(--montserrat-fonts);
+    --heading-mobile-title-font: 600 34rem/normal var(--montserrat-fonts);
     --heading-sub-title-font: 300 32rem/normal var(--inter-fonts);
+    --heading-mobile-sub-title-font: 300 28rem/normal var(--inter-fonts);
 
     //Innovations Fonts
     --innovations-title-font: 600 48rem/normal var(--montserrat-fonts);
@@ -33,6 +35,8 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
     --characteristics-button-font: 400 16rem/normal var(--roboto-fonts);
     --characteristics-description-font: 200 16rem/normal var(--roboto-fonts);
     --characteristics-title-font: 600 18rem/normal var(--roboto-fonts);
+    --characteristics-mobile-description-font: 200 12rem/normal var(--roboto-fonts);
+    --characteristics-mobile-title-font: 600 12rem/normal var(--roboto-fonts);
 
     //Footer Fonts
     --bottom-footer-font: 300 17rem/normal var(--inter-fonts);

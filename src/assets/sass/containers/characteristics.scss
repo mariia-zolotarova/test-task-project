@@ -5,6 +5,12 @@
         display: flex;
         flex-direction: column;
         padding: 20rem 120rem 159rem 120rem;
+        position: relative;
+
+        @media (max-width: $tablet) {
+            padding: 50rem 50rem 70rem 50rem;
+            align-items: center;
+        }
     }
 
     &__heading {
@@ -12,6 +18,12 @@
         flex-direction: row;
         width: 100%;
         gap: 270rem;
+
+        @media (max-width: $tablet) {
+            padding-top: 60%;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__info {
@@ -24,6 +36,10 @@
             letter-spacing: 0.96px;
             text-transform: uppercase;
             margin-bottom: 20rem;
+
+            @media (max-width: $tablet) {
+                font: var(--heading-mobile-title-font);
+            }
         }
 
         &-text {
@@ -31,6 +47,17 @@
             line-height: 110%;
             letter-spacing: 0.44px;
             margin-bottom: 40rem;
+
+            @media (max-width: $tablet) {
+                font: var(--heading-mobile-sub-title-font);
+
+            }
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            text-align: center;
+
         }
     }
 
@@ -45,6 +72,10 @@
             line-height: 100%;
             letter-spacing: 0.32px;
             padding: 19rem 15rem;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
         }
 
         &-black {
@@ -53,46 +84,90 @@
             line-height: 100%;
             letter-spacing: 0.32px;
 
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
     }
 
     &__img {
         width: 50%;
         margin-top: 60rem;
+
+        @media (max-width: $tablet) {
+            position: absolute;
+            top: 10rem;
+            width: 80%;
+        }
     }
 
     &__frame {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+        @media (max-width: $tablet) {
+            margin-top: 30rem;
+            width: 100%;
+            align-items: center;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         gap: 6rem;
-        padding: 20rem;
-        width: 18%;
-        min-height: 106rem;
-        margin-right: 20rem;
-        margin-bottom: 20rem;
-        background-color: var(--color-black-19);
+
+        width: 20%;
+
 
         &-title {
             font: var(--characteristics-title-font);
             color: var(--color-sand);
             line-height: 110%;
             letter-spacing: 0.36px;
+            padding-bottom: 6rem;
+
+            @media(max-width: $tablet) {
+                font: var(--characteristics-mobile-title-font);
+            }
         }
 
         &-text {
             font: var(--characteristics-description-font);
             line-height: 110%;
             letter-spacing: 0.36px;
+
+            @media(max-width: $tablet) {
+                font: var(--characteristics-mobile-description-font);
+                text-wrap: wrap;
+                word-break: break-all;
+            }
+        }
+
+        @media (max-width: $tablet) {
+            width: 50%;
         }
     }
 
-    &__item:last-child {
-        margin-right: 0;
+    &__card {
+        background-color: var(--color-black-19);
+        padding: 20rem;
+        margin: 20rem;
+        height: 100%;
+        min-height: 106rem;
+        border-radius: 10rem;
+
+        @media (max-width: $tablet) {
+            margin: 10rem;
+        }
     }
+
+
 }
