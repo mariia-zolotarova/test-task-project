@@ -38,6 +38,14 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
     --characteristics-mobile-description-font: 200 12rem/normal var(--roboto-fonts);
     --characteristics-mobile-title-font: 600 12rem/normal var(--roboto-fonts);
 
+    //Advantages Fonts
+    --advantages-title-font: 600 48rem/normal var(--montserrat-fonts);
+    --advantages-card-title-font: 600 24rem/normal var(--roboto-fonts);
+    --advantages-card-description-font: 200 22rem/normal var(--roboto-fonts);
+    --advantages-mobile-title-font: 600 30rem/normal var(--montserrat-fonts);
+    --advantages-card-mobile-title-font: 600 19rem/normal var(--roboto-fonts);
+    --advantages-card-mobile-description-font: 200 16rem/normal var(--roboto-fonts);
+
     //Footer Fonts
     --bottom-footer-font: 300 17rem/normal var(--inter-fonts);
 }
