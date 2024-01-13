@@ -49,8 +49,6 @@
             flex-direction: column;
             margin: 46rem 0 65rem 10%;
         }
-
-
     }
 
     &__row {
@@ -61,7 +59,6 @@
         @media (max-width: $tablet) {
             display: none;
         }
-
     }
 
     &__nav-link {
@@ -85,8 +82,8 @@
                 gap: 40rem;
                 position: absolute;
                 top: 20%;
-                left: 45%;
-                align-items: center;
+                left: 50rem;
+                align-items: flex-start;
             }
 
             &-link {
