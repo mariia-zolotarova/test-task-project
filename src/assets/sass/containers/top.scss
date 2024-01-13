@@ -39,6 +39,7 @@
     }
 
     &__title {
+
         &-text {
             font: var(--innovations-title-font);
             line-height: 110%;
@@ -46,6 +47,12 @@
             text-transform: uppercase;
             padding-top: 160rem;
             padding-left: 123rem;
+
+            @media (max-width: $tablet) {
+                font: var(--advantages-mobile-title-font);
+                padding: 50rem 20rem 50rem 20rem;
+                text-align: center;
+            }
         }
     }
 
@@ -55,17 +62,37 @@
         gap: 20rem;
         padding: 62rem 120rem;
         justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            padding: 50rem 20rem 50rem 20rem;
+        }
     }
 
     &__box {
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+
         &-icon {
             width: 72rem;
             height: 50rem;
+
+        }
+
+        &-drone {
+            display: flex;
+            justify-content: center;
         }
 
         &-img {
             max-width: 376rem;
             margin: 0 92rem 84rem 77rem;
+
+            @media (max-width: $tablet) {
+                width: 60%;
+                justify-content: center;
+            }
         }
 
 
@@ -76,10 +103,22 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+        }
+
         &-text {
             font: var(--innovations-frame-title-font);
             letter-spacing: 0.48px;
             width: 50%;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                margin-bottom: 20rem;
+                text-align: center;
+                font: var(--advantages-card-mobile-title-font);
+            }
 
         }
 
@@ -87,6 +126,12 @@
             font: var(--top-price-font);
             letter-spacing: 0.64px;
             width: 50%;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                text-align: center;
+                font: var(--innovations-frame-title-font);
+            }
         }
     }
 }
