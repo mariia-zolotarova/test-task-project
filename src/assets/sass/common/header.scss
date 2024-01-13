@@ -70,6 +70,11 @@
         letter-spacing: 3.9rem;
     }
 
+    &__nav-link:hover {
+        color: var(--color-green);
+    }
+
+
     &__mobile {
         display: none;
 
@@ -87,9 +92,12 @@
             }
 
             &-link {
-
                 font: var(--heading-sub-title-font);
                 color: var(--color-white);
+            }
+
+            &-link:hover {
+                color: var(--color-green);
             }
 
             height: 100vh;
