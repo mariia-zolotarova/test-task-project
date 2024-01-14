@@ -49,6 +49,10 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
     //Top Fonts
     --top-price-font: 600 32rem/normal var(--roboto-fonts);
 
+    //Everyone
+    --everyone-mobile-title-font: 300 28rem/normal var(--montserrat-fonts);
+    --everyone-mobile-thin-title-font: 300 22rem/normal var(--montserrat-fonts);
+
     //Footer Fonts
     --bottom-footer-font: 300 17rem/normal var(--inter-fonts);
 }
