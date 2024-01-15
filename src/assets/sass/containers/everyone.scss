@@ -3,7 +3,7 @@
         padding: 0 261rem 160rem 261rem;
         background-color: var(--color-black-19);
 
-        @media (max-width: 1664rem) {
+        @media (max-width: 1664px) {
             padding: 0rem 125rem 180rem 112rem;
         }
 
@@ -23,7 +23,7 @@
         &-item-thin {
             font: var(--innovations-sub-title-font);
 
-            @media (max-width: 1378rem) {
+            @media (max-width: 1378px) {
                 font: var(--everyone-tablet-thin-title-font);
             }
 
@@ -37,7 +37,7 @@
             padding: 0rem 10rem 20rem 20rem;
         }
 
-        @media (max-width: 1378rem) {
+        @media (max-width: 1378px) {
             font: var(--everyone-tablet-title-font);
         }
     }
@@ -50,7 +50,7 @@
         &-item {
             width: 50%;
 
-            @media (max-width: 1378rem) {
+            @media (max-width: 1378px) {
                 width: 100%;
                 padding: 24rem;
             }
@@ -88,13 +88,10 @@
             }
         }
 
-        @media (max-width: 1378rem) {
+        @media (max-width: 1378px) {
             flex-direction: column;
         }
 
-        // @media (max-width: $tablet) {
-        //     flex-direction: column;
-        // }
     }
 
     &__box {
@@ -104,7 +101,7 @@
         height: 100%;
         background-color: var(--color-black-1E);
 
-        @media (max-width: 1378rem) {
+        @media (max-width: 1378px) {
             padding: 20rem;
         }
 
