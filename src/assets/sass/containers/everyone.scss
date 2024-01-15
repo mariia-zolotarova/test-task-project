@@ -3,6 +3,10 @@
         padding: 0 261rem 160rem 261rem;
         background-color: var(--color-black-19);
 
+        @media (max-width: 1664rem) {
+            padding: 0rem 125rem 180rem 112rem;
+        }
+
         @media (max-width: $tablet) {
             padding: 0rem 20rem 70rem 20rem;
         }
@@ -19,6 +23,10 @@
         &-item-thin {
             font: var(--innovations-sub-title-font);
 
+            @media (max-width: 1378rem) {
+                font: var(--everyone-tablet-thin-title-font);
+            }
+
             @media (max-width: $tablet) {
                 font: var(--everyone-mobile-thin-title-font);
             }
@@ -26,7 +34,11 @@
 
         @media (max-width: $tablet) {
             font: var(--everyone-mobile-title-font);
-            padding: 0rem 10rem 70rem 20rem;
+            padding: 0rem 10rem 20rem 20rem;
+        }
+
+        @media (max-width: 1378rem) {
+            font: var(--everyone-tablet-title-font);
         }
     }
 
@@ -38,35 +50,63 @@
         &-item {
             width: 50%;
 
+            @media (max-width: 1378rem) {
+                width: 100%;
+                padding: 24rem;
+            }
+
             @media (max-width: $tablet) {
                 width: 100%;
-                padding: 14rem;
+                padding: 0rem;
             }
         }
 
         &-item:nth-child(1) {
             padding-right: 24rem;
             padding-bottom: 24rem;
+
+            @media (max-width: $tablet) {
+                padding-right: 0rem;
+                padding-bottom: 14rem;
+            }
         }
 
         &-item:nth-child(2) {
             padding-bottom: 24rem;
+
+            @media (max-width: $tablet) {
+                padding-bottom: 14rem;
+            }
         }
 
         &-item:nth-child(3) {
             padding-right: 24rem;
+
+            @media (max-width: $tablet) {
+                padding-right: 0rem;
+                padding-bottom: 14rem;
+            }
         }
 
-        @media (max-width: $tablet) {
+        @media (max-width: 1378rem) {
             flex-direction: column;
         }
+
+        // @media (max-width: $tablet) {
+        //     flex-direction: column;
+        // }
     }
 
     &__box {
         display: flex;
         flex-direction: row;
         padding: 30rem 50rem;
+        height: 100%;
         background-color: var(--color-black-1E);
+
+        @media (max-width: 1378rem) {
+            padding: 20rem;
+        }
 
         @media (max-width: $tablet) {
             padding: 20rem;
@@ -76,7 +116,7 @@
     &__box-img {
         max-width: 176rem;
         max-height: 176rem;
-        padding-right: 20rem;
+        margin-right: 20rem;
 
         @media (max-width: $tablet) {
             max-width: 100rem;
@@ -93,7 +133,8 @@
             letter-spacing: 0.48px;
 
             @media (max-width: $tablet) {
-                font: var(--advantages-card-mobile-title-font);
+                font: var(--everyone-card-mobile-title-font);
+                word-break: break-word;
             }
         }
 
@@ -103,7 +144,7 @@
             letter-spacing: 0.44px;
 
             @media (max-width: $tablet) {
-                font: var(--advantages-card-mobile-description-font);
+                font: var(--everyone-card-mobile-description-font);
             }
         }
     }

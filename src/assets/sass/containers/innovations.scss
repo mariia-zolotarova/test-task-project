@@ -6,7 +6,7 @@
         padding: 50rem 120rem 159rem 120rem;
 
         @media (max-width: $tablet) {
-            padding: 50rem 20rem 170rem 20rem;
+            padding: 20rem 20rem 70rem 20rem;
         }
     }
 
@@ -29,6 +29,10 @@
             border-radius: 21rem;
         }
 
+        @media (max-width: 1372px) {
+            width: 50%;
+        }
+
         @media (max-width: $tablet) {
             width: 100%;
         }
@@ -39,6 +43,10 @@
         flex-direction: column;
         gap: 20rem;
         width: 30%;
+
+        @media (max-width: 1372px) {
+            width: 50%;
+        }
 
         @media (max-width: $tablet) {
             width: 100%;
@@ -53,6 +61,15 @@
 
         &-thin {
             font: var(--innovations-sub-title-font);
+
+            @media (max-width: 1372px) {
+                font: var(--everyone-tablet-thin-title-font);
+            }
+
+        }
+
+        @media (max-width: 1372px) {
+            font: var(--everyone-tablet-title-font);
         }
 
         @media (max-width: $tablet) {

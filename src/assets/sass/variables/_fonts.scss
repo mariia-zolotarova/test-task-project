@@ -50,8 +50,12 @@ $roboto-fonts: 'Roboto Flex', sans-serif;
     --top-price-font: 600 32rem/normal var(--roboto-fonts);
 
     //Everyone
+    --everyone-tablet-title-font: 600 26rem/normal var(--montserrat-fonts);
+    --everyone-tablet-thin-title-font: 300 26rem/normal var(--montserrat-fonts);
     --everyone-mobile-title-font: 300 28rem/normal var(--montserrat-fonts);
     --everyone-mobile-thin-title-font: 300 22rem/normal var(--montserrat-fonts);
+    --everyone-card-mobile-title-font: 600 18rem/normal var(--roboto-fonts);
+    --everyone-card-mobile-description-font: 200 14rem/normal var(--roboto-fonts);
 
     //Footer Fonts
     --bottom-footer-font: 300 17rem/normal var(--inter-fonts);
