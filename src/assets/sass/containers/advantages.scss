@@ -9,7 +9,7 @@
 
 
         @media (max-width: $tablet) {
-            padding: 10rem 20rem 170rem 20rem;
+            padding: 10rem 20rem 70rem 20rem;
             flex-direction: column;
         }
     }
@@ -28,7 +28,8 @@
             top: 30rem;
 
             @media (max-width: $tablet) {
-                width: 100%;
+                width: 80%;
+                right: 10%;
                 position: absolute;
             }
         }
@@ -40,6 +41,11 @@
         @media (max-width: $tablet) {
             width: 100%;
             margin-top: 50%;
+        }
+
+        @media (max-width: 639px) {
+            width: 100%;
+            margin-top: 40%;
         }
     }
 

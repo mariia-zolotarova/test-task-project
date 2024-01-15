@@ -19,6 +19,10 @@
         width: 100%;
         gap: 270rem;
 
+        @media (max-width: 1397px) {
+            gap: 50rem;
+        }
+
         @media (max-width: $tablet) {
             padding-top: 60%;
             flex-direction: column;
@@ -100,6 +104,14 @@
         width: 50%;
         margin-top: 60rem;
 
+        @media (max-width: 1397px) {
+            margin-top: 10%;
+        }
+
+        @media (max-width: 1096px) {
+            margin-top: 17%;
+        }
+
         @media (max-width: $tablet) {
             position: absolute;
             top: 10rem;
@@ -149,6 +161,10 @@
                 text-wrap: wrap;
                 word-break: break-all;
             }
+        }
+
+        @media (max-width: 1246px) {
+            width: 50%;
         }
 
         @media (max-width: $tablet) {
