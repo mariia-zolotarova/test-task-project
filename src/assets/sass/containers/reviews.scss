@@ -1,0 +1,87 @@
+.reviews {
+    &__container {
+        padding: 0 120rem 177rem 120rem;
+        background-color: var(--color-black-19);
+
+        @media (max-width: $tablet) {
+            padding: 0rem 20rem 70rem 20rem;
+        }
+    }
+
+    &__title-item {
+        font: var(--advantages-title-font);
+        line-height: 110%;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        margin-bottom: 60rem;
+
+        @media (max-width: $tablet) {
+            font: var(--advantages-mobile-title-font);
+            text-align: center;
+            margin-bottom: 40rem;
+        }
+    }
+
+    &__frames {
+        display: flex;
+        flex-direction: row;
+        gap: 22rem;
+
+        @media (max-width: 1370px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__box {
+        background-color: var(--color-black-1E);
+        padding: 50rem 75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            padding: 20rem 40rem;
+        }
+    }
+
+    &__text {
+        font: var(--advantages-card-description-font);
+        padding-bottom: 30rem;
+        line-height: 110%;
+        letter-spacing: 0.44px;
+
+        @media (max-width: $tablet) {
+            font: var(--advantages-card-mobile-description-font);
+        }
+    }
+
+    &__info-name {
+        font: var(--advantages-card-title-font);
+
+        @media (max-width: $tablet) {
+            font: var(--advantages-card-mobile-title-font);
+        }
+    }
+
+    &__info-position {
+        font: var(--everyone-card-mobile-title-font);
+
+        @media (max-width: $tablet) {
+            font: var(--advantages-card-mobile-description-font);
+        }
+    }
+
+    &__person {
+        display: flex;
+        flex-direction: row;
+        gap: 18rem;
+    }
+
+    &__img {
+        width: 68rem;
+    }
+}
